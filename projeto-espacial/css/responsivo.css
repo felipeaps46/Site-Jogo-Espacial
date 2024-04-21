@@ -1,0 +1,161 @@
+/*tamanho se teelfones 0 - 600*/
+@media screen and (min-width:0px) and (max-width:768px) {
+    .logo {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .principal {
+        font-size: 3.5rem;
+    }
+
+    header {
+        flex-flow: column;
+        height: 600px;
+    }
+
+    .img-head {
+        display: none;
+    }
+
+    .headline {
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+        margin-left: 0;
+    }
+
+    section.container {
+        padding-top: 60px;
+        flex-flow: column;
+    }
+
+    div.heroi {
+        text-align: center;
+    }
+
+    .bg-capitao,
+    .bg-estrela {
+        margin-top: 60px;
+    }
+
+    .tabela-precos {
+        padding-top: 10px;
+    }
+
+
+}
+
+/* tamanho para tablets*/
+@media screen and (min-width:769px) and (max-width:992px) {
+
+    .logo {
+        margin-left: 2%;
+    }
+
+    .menu {
+        margin-right: 0;
+    }
+
+    .menu-link {
+        padding: 10px;
+        margin-right: 1%
+    }
+
+    .principal {
+        font-size: 3.5rem;
+    }
+
+    header {
+        flex-flow: column;
+        height: 600px;
+    }
+
+    .img-head {
+        display: none;
+    }
+
+    .headline {
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+        margin-left: 0;
+    }
+
+    section.container {
+        padding-top: 60px;
+        flex-flow: column;
+    }
+
+    div.heroi {
+        text-align: center;
+    }
+
+    .bg-capitao,
+    .bg-estrela {
+        margin-top: 60px;
+    }
+
+    .tabela-precos {
+        padding-top: 10px;
+    }
+}
+
+/* tamanho para computadores*/
+@media screen and (min-width:993px) and (max-width:1263px) {
+
+    .logo {
+        margin-left: 2%;
+    }
+
+    .menu {
+        margin-right: 0;
+    }
+
+    .menu-link {
+        padding: 10px;
+        margin-right: 1%
+    }
+
+    .principal {
+        font-size: 5rem;
+    }
+
+    header {
+        flex-flow: column;
+        height: 600px;
+    }
+
+    .img-head {
+        display: none;
+    }
+
+    .headline {
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+        margin-left: 0;
+    }
+
+    section.container {
+        padding-top: 60px;
+        flex-flow: column;
+    }
+
+    div.heroi {
+        text-align: center;
+    }
+
+    .bg-capitao,
+    .bg-estrela {
+        margin-top: 60px;
+    }
+
+    .tabela-precos {
+        padding-top: 10px;
+    }
+}

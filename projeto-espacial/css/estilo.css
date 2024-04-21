@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #050811;
+}
+
+.mouse {
+    cursor: url('../img/cursor.png'), default;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.logo {
+    display: flex;
+    flex: 15%;
+    align-items: center;
+    height: 80px;
+    margin-left: 15%;
+}
+
+.logo strong {
+    color: white;
+    font-size: 1.5em;
+}
+
+.menu {
+    display: flex;
+    flex: 55%;
+    margin-right: 15%;
+    justify-content: flex-end;
+}
+
+
+.menu-link {
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 5px;
+    color: white;
+}
+
+.menu-link.active {
+    background: #ffd000;
+    color: black;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    height: 800px;
+    background-image: linear-gradient(0deg, rgba(2, 5, 11), rgba(0, 0, 0, 0.6), rgba(2, 5, 11, 0.9)), url('../img/fundo-naveespacial.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
+
+.headline {
+    flex: 25%;
+    margin-left: 15%;
+}
+
+.mini-slogan {
+    color: #ffd000;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+.principal {
+    color: white;
+    font-size: 6.5rem;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 10px 10px #0b0b1f;
+}
+
+.text-white {
+    color: white;
+}
+
+.img-head {
+    flex: 45%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+.img-resp {
+    max-width: 100%;
+}
+
+.tabela-precos {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.titulo-tabela {
+    width: 100%;
+}
+
+
+
+/**BOTAO NEON **/
+
+a.btn {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100px;
+    padding: .9em 1.2em;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    background: linear-gradient(#3e3680, #0f0c2c);
+    cursor: pointer;
+    /*   transition: .57s cubic-bezier(.42,.67,.13,1.57); */
+    transition: .7s cubic-bezier(.65, .69, .35, 1.27);
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px #32ff7ecc;
+    background: #32ff7e;
+    animation: jiggle 1.7s ease-in;
+    animation-iteration-count: 1;
+}
+
+.btn.inverse {
+    color: black;
+    background: #ffd000;
+}
+
+.btn.inverse:hover {
+    box-shadow: 0 0 20px #32ff7ecc;
+    background: #32ff7e;
+    animation: jiggle 1.7s ease-in;
+    animation-iteration-count: 1;
+}
+
+@keyframes jiggle {
+
+    38%,
+    52% {
+        transform: scale(1.0, 1.0)
+    }
+
+    40% {
+        transform: scale(1.1, 0.9)
+    }
+
+    46% {
+        transform: scale(0.9, 1.1) translate(0, -5px)
+    }
+
+    49% {
+        transform: scale(1.0, 1.0) translate(0, -3px)
+    }
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section.container {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 0;
+    height: auto;
+}
+
+div.item {
+    border: 1px solid #5b5a6d;
+    color: #3e3680;
+    text-align: center;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+div.item i {
+    color: white;
+    font-size: 3rem;
+}
+
+div.item:hover {
+    color: white;
+    background: #3e3680;
+    cursor: pointer;
+}
+
+h2.titulo {
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+}
+
+.sombra {
+    text-shadow: 15px 10px #14112f;
+}
+
+.video {
+    flex: 1;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.heroi {
+    flex: 50%;
+}
+
+.heroi h3 {
+    color: yellow;
+    font-weight: lighter;
+}
+
+.heroi h2 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.heroi p {
+    color: #574a80;
+}
+
+.img-heroi {
+    flex: 50%;
+}
+
+.bg-capitao {
+    background: url('../img/fundo-estrela.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.bg-estrela {
+    background: url('../img/estrela.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.bg-universo {
+    background: url('../img/fundo-universo.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img-resp {
+    max-width: 100%;
+}
+
+/**Preços**/
+.price-table {
+    background: #eee;
+    flex: 1;
+    margin: 1rem;
+    text-transform: uppercase;
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0.2rem;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.price_header {
+    color: whitesmoke;
+    margin-bottom: 1rem;
+    position: relative;
+    border-radius: 0.2rem;
+
+}
+
+.price_header .price {
+    font-size: 2rem;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price_header .price span {
+    font-size: 1.5rem;
+}
+
+.price_header .title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 60%;
+    text-align: center;
+    padding: 0.4rem 0;
+    border-radius: 0.8rem;
+}
+
+
+.price-table .pricing_list {
+    list-style: none;
+    padding: 0.6rem 1rem;
+}
+
+.price-table .pricing_list li {
+    margin: 0.6rem 0;
+    font-size: 0.9rem;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.price-table .pricing_list li::after {
+    content: '';
+    width: 70%;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    bottom: -8px;
+    left: 15%;
+}
+
+.price-table a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    width: 60%;
+    padding: 0.5rem 0;
+    border: 1px solid;
+    font-size: 0.7rem;
+    transition: 0.3s linear;
+}
+
+.price-table a:hover {
+    padding: 25px;
+    border-radius: 1rem;
+}
+
+.table_1 .price_header {
+    background: #16a085;
+}
+
+.table_2 .price_header {
+    background: #8e44ad;
+}
+
+.table_3 .price_header {
+    background: #f39c12;
+}
+
+.table_1 .title {
+    background-image: linear-gradient(125deg, #3498db, #9b59b6);
+}
+
+.table_2 .title {
+    background-image: linear-gradient(125deg, #2ecc71, #3498db);
+}
+
+.table_3 .title {
+    background-image: linear-gradient(125deg, #8e44ad, #e74c3c);
+}
+
+.table_1 a {
+    font-size: 12px;
+    color: #16a085;
+}
+
+.table_2 a {
+    font-size: 12px;
+    color: #8e44ad;
+}
+
+.table_3 a {
+    font-size: 12px;
+    color: #f39c12;
+}
+
+.table_1 a:hover {
+    background: #16a085;
+    color: #fff;
+}
+
+.table_2 a:hover {
+    background: #8e44ad;
+    color: #fff;
+}
+
+.table_3 a:hover {
+    background: #f39c12;
+    color: #fff;
+}
+
+@media screen and (max-width: 780px) {
+    .price-table {
+        flex: 100%;
+        max-width: 350px;
+    }
+}
+
+section.completo {
+    display: flex;
+    background: linear-gradient(#0f0c2c, #0b0357);
+}
+
+div.call-to-action {
+    flex: 1;
+    padding: 5%;
+    color: white;
+    font-size: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/fundo-espaço.jpg') no-repeat;
+    background-size: cover;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.conteudo-footer {
+    color: white;
+    font-size: 40px;
+}
